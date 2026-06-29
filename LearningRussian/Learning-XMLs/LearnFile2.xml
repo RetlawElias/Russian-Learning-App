@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<WordDatabase>
+	<Word DE="Wasser" RU="ВОДА" Score="0" />
+	<Word DE="Brot" RU="ХЛЕБ" Score="0" />
+	<Word DE="Haus" RU="ДОМ" Score="0" />
+	<Word DE="Auto" RU="МАШИНА" Score="0" />
+	<Word DE="Buch" RU="КНИГА" Score="0" />
+	<Word DE="Tisch" RU="СТОЛ" Score="0" />
+	<Word DE="Stuhl" RU="СТУЛ" Score="0" />
+	<Word DE="Tür" RU="ДВЕРЬ" Score="0" />
+	<Word DE="Hund" RU="СОБАКА" Score="0" />
+	<Word DE="Mutter" RU="МАТЬ" Score="0" />
+	<Word DE="Vater" RU="ОТЕЦ" Score="0" />
+	<Word DE="Freund" RU="ДРУГ" Score="0" />
+	<Word DE="Stadt" RU="ГОРОД" Score="0" />
+	<Word DE="Land" RU="СТРАНА" Score="0" />
+	<Word DE="Jahr" RU="ГОД" Score="0" />
+	<Word DE="Tag" RU="ДЕНЬ" Score="0" />
+	<Word DE="Nacht" RU="НОЧЬ" Score="0" />
+	<Word DE="Zeit" RU="ВРЕМЯ" Score="0" />
+	<Word DE="Arbeit" RU="РАБОТА" Score="0" />
+	<Word DE="Schule" RU="ШКОЛА" Score="0" />
+	<Word DE="Geld" RU="ДЕНЬГИ" Score="0" />
+	<Word DE="Liebe" RU="ЛЮБОВЬ" Score="0" />
+	<Word DE="Danke" RU="СПАСИБО" Score="0" />
+	<Word DE="Bitte" RU="ПОЖАЛУЙСТА" Score="0" />
+	<Word DE="Gut" RU="ХОРОШО" Score="0" />
+	<Word DE="Schlecht" RU="ПЛОХО" Score="0" />
+	<Word DE="Groß" RU="БОЛЬШОЙ" Score="0" />
+	<Word DE="Klein" RU="МАЛЕНЬКИЙ" Score="0" />
+</WordDatabase>

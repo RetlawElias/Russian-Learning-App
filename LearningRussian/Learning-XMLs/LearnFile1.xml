@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<WordDatabase>
+  <Word DE="hi" RU="ПРИВЕТ" Score="0" />
+  <Word DE="hallo" RU="ЗДРАВСТВУЙТЕ" Score="0" />
+  <Word DE="Katze" RU="КОТ" Score="0" />
+  <Word DE="Nein" RU="НЕТ" Score="1" />
+  <Word DE="Ja" RU="ДА" Score="1" />
+  <Word DE="Bruder" RU="БРАТ" Score="1" />
+  <Word DE="Schwester" RU="СЕСТРА" Score="0" />
+  <Word DE="Restaurant" RU="РЕСТОРАН" Score="0" />
+  <Word DE="Moskau" RU="МОСКВА" Score="1" />
+  <Word DE="Fenster" RU="ОКНО" Score="0" />
+  <Word DE="Computer" RU="КОМПЬЮТЕР" Score="1" />
+  <Word DE="Ehemann" RU="МУЖ" Score="0" />
+  <Word DE="Ehefrau" RU="ЖЕНА" Score="1" />
+  <Word DE="Lehrer" RU="УЧИТЕЛЬ" Score="0" />
+  <Word DE="Arzt" RU="ДОКТОР" Score="0" />
+  <Word DE="Ingenieur" RU="ИНЖЕНЕР" Score="0" />
+  <Word DE="Ich" RU="Я" Score="1" />
+  <Word DE="Du" RU="ТЫ" Score="0" />
+  <Word DE="Er" RU="ОН" Score="1" />
+  <Word DE="Du" RU="ВЫ" Score="0" />
+  <Word DE="Sie" RU="ОНА" Score="1" />
+  <Word DE="Es" RU="ОНО" Score="0" />
+</WordDatabase>

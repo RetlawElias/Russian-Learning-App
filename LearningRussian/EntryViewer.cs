@@ -22,23 +22,27 @@ namespace LearningRussian
                 Label DE = new Label();
                 Label RU = new Label();
                 Label Score = new Label();
+                
+                int scrollbarOffset = 14;
 
-                label1.Size = new Size(panel1.Size.Width / 3, 32);
-                label2.Size = new Size(panel1.Size.Width / 3, 32);
-                label3.Size = new Size(panel1.Size.Width / 3, 32);
+                label1.Size = new Size(panel1.Size.Width / 3 - scrollbarOffset, 32);
+                label2.Size = new Size(panel1.Size.Width / 3 - scrollbarOffset, 32);
+                label3.Size = new Size(panel1.Size.Width / 3 - scrollbarOffset, 32);
                 label1.Location = new Point(0, 0);
-                label2.Location = new Point(panel1.Size.Width / 3, 0);
-                label3.Location = new Point((panel1.Size.Width / 3) * 2, 0);
+                label2.Location = new Point(panel1.Size.Width / 3 - scrollbarOffset, 0);
+                label3.Location = new Point((panel1.Size.Width / 3) * 2 - scrollbarOffset * 2, 0);
+
 
                 DE.Text = (string)entry.Attribute("DE");
                 RU.Text = (string)entry.Attribute("RU");
                 Score.Text = (string)entry.Attribute("Score");
 
+
                 DE.Anchor = AnchorStyles.Top | AnchorStyles.Left;
                 DE.Font = new Font("Segoe UI", 12F);
                 DE.ForeColor = Color.Black;
                 DE.Location = new Point(0, 0 + 30 * index);
-                DE.Size = new Size(panel1.Size.Width / 3, 30);
+                DE.Size = new Size(panel1.Size.Width / 3 - scrollbarOffset, 30);
                 DE.TextAlign = ContentAlignment.TopLeft;
                 DE.Click += (s, e) => DE_Click(s, e, entry);
                 panel1?.Controls.Add(DE);
@@ -46,8 +50,8 @@ namespace LearningRussian
                 RU.Anchor = AnchorStyles.Top | AnchorStyles.Left;
                 RU.Font = new Font("Segoe UI", 12F);
                 RU.ForeColor = Color.Black;
-                RU.Location = new Point(panel1.Size.Width / 3, 0 + 30 * index);
-                RU.Size = new Size(panel1.Size.Width / 3, 30);
+                RU.Location = new Point(panel1.Size.Width / 3 - scrollbarOffset, 0 + 30 * index);
+                RU.Size = new Size(panel1.Size.Width / 3 - scrollbarOffset, 30);
                 RU.TextAlign = ContentAlignment.TopLeft;
                 RU.Click += (s, e) => DE_Click(s, e, entry);
                 panel1?.Controls.Add(RU);
@@ -55,8 +59,8 @@ namespace LearningRussian
                 Score.Anchor = AnchorStyles.Top | AnchorStyles.Left;
                 Score.Font = new Font("Segoe UI", 12F);
                 Score.ForeColor = Color.Black;
-                Score.Location = new Point((panel1.Size.Width / 3) * 2, 0 + 30 * index);
-                Score.Size = new Size(panel1.Size.Width / 3, 30);
+                Score.Location = new Point((panel1.Size.Width / 3) * 2 - scrollbarOffset * 2, 0 + 30 * index);
+                Score.Size = new Size(panel1.Size.Width / 3 - scrollbarOffset, 30);
                 Score.TextAlign = ContentAlignment.TopLeft;
                 panel1?.Controls.Add(Score);
 
@@ -75,15 +79,25 @@ namespace LearningRussian
                 Label RU = new Label();
                 Label Score = new Label();
 
+                int scrollbarOffset = 14;
+
+                label1.Size = new Size(panel1.Size.Width / 3 - scrollbarOffset, 32);
+                label2.Size = new Size(panel1.Size.Width / 3 - scrollbarOffset, 32);
+                label3.Size = new Size(panel1.Size.Width / 3 - scrollbarOffset, 32);
+                label1.Location = new Point(0, 0);
+                label2.Location = new Point(panel1.Size.Width / 3 - scrollbarOffset, 0);
+                label3.Location = new Point((panel1.Size.Width / 3) * 2 - scrollbarOffset * 2, 0);
+
                 DE.Text = (string)entry.Attribute("DE");
                 RU.Text = (string)entry.Attribute("RU");
                 Score.Text = (string)entry.Attribute("Score");
+
 
                 DE.Anchor = AnchorStyles.Top | AnchorStyles.Left;
                 DE.Font = new Font("Segoe UI", 12F);
                 DE.ForeColor = Color.Black;
                 DE.Location = new Point(0, 0 + 30 * index);
-                DE.Size = new Size(panel1.Size.Width / 3, 30);
+                DE.Size = new Size(panel1.Size.Width / 3 - scrollbarOffset, 30);
                 DE.TextAlign = ContentAlignment.TopLeft;
                 DE.Click += (s, e) => DE_Click(s, e, entry);
                 panel1?.Controls.Add(DE);
@@ -91,8 +105,8 @@ namespace LearningRussian
                 RU.Anchor = AnchorStyles.Top | AnchorStyles.Left;
                 RU.Font = new Font("Segoe UI", 12F);
                 RU.ForeColor = Color.Black;
-                RU.Location = new Point(panel1.Size.Width / 3, 0 + 30 * index);
-                RU.Size = new Size(panel1.Size.Width / 3, 30);
+                RU.Location = new Point(panel1.Size.Width / 3 - scrollbarOffset, 0 + 30 * index);
+                RU.Size = new Size(panel1.Size.Width / 3 - scrollbarOffset, 30);
                 RU.TextAlign = ContentAlignment.TopLeft;
                 RU.Click += (s, e) => DE_Click(s, e, entry);
                 panel1?.Controls.Add(RU);
@@ -100,8 +114,8 @@ namespace LearningRussian
                 Score.Anchor = AnchorStyles.Top | AnchorStyles.Left;
                 Score.Font = new Font("Segoe UI", 12F);
                 Score.ForeColor = Color.Black;
-                Score.Location = new Point((panel1.Size.Width / 3) * 2, 0 + 30 * index);
-                Score.Size = new Size(panel1.Size.Width / 3, 30);
+                Score.Location = new Point((panel1.Size.Width / 3) * 2 - scrollbarOffset * 2, 0 + 30 * index);
+                Score.Size = new Size(panel1.Size.Width / 3 - scrollbarOffset, 30);
                 Score.TextAlign = ContentAlignment.TopLeft;
                 panel1?.Controls.Add(Score);
 
@@ -142,7 +156,7 @@ namespace LearningRussian
             panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Location = new Point(0, 35);
             panel1.Name = "panel1";
-            panel1.Size = new Size(759, 546);
+            panel1.Size = new Size(756, 546);
             panel1.TabIndex = 0;
             // 
             // panel4
@@ -163,7 +177,7 @@ namespace LearningRussian
             label3.Size = new Size(120, 32);
             label3.TabIndex = 2;
             label3.Text = "Score";
-            label3.TextAlign = ContentAlignment.MiddleCenter;
+            label3.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
@@ -173,7 +187,7 @@ namespace LearningRussian
             label2.Size = new Size(315, 32);
             label2.TabIndex = 1;
             label2.Text = "Russian";
-            label2.TextAlign = ContentAlignment.MiddleCenter;
+            label2.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label1
             // 
@@ -183,7 +197,7 @@ namespace LearningRussian
             label1.Size = new Size(315, 32);
             label1.TabIndex = 0;
             label1.Text = "German";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
+            label1.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // EntryViewer
             // 

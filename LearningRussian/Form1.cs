@@ -69,7 +69,7 @@ public class Form1 : Form
         OpenFileDialog dialog = new OpenFileDialog();
 
         dialog.Title = "Select a file";
-        dialog.Filter = "All files (*.*)|*.*";
+        dialog.Filter = "All files (*.xml)|*.xml";
 
         if (dialog.ShowDialog() == DialogResult.OK)
         {
@@ -90,15 +90,20 @@ public class Form1 : Form
                 label3.Text = "File Found";
                 panel1.BackColor = Color.FromArgb(255, 100, 200, 100);
                 button4.Enabled = true;
+                button6.Enabled = true;
+                button7.Enabled = true;
+
             }
         }
         else
         {
             fileReference = null;
             label3.ForeColor = Color.Red;
-            label3.Text = "No File Detected";
+            label3.Text = "No XML-File Detected";
             panel1.BackColor = Color.FromArgb(255, 200, 100, 100);
             button4.Enabled = false;
+            button6.Enabled = false;
+            button7.Enabled = false;
         }
     }
 
@@ -138,15 +143,19 @@ public class Form1 : Form
                 label3.Text = "File Found";
                 panel1.BackColor = Color.FromArgb(255, 100, 200, 100);
                 button4.Enabled = true;
+                button6.Enabled = true;
+                button7.Enabled = true;
             }
         }
         else
         {
             fileReference = null;
             label3.ForeColor = Color.Red;
-            label3.Text = "No File Detected";
+            label3.Text = "No XML-File Detected";
             panel1.BackColor = Color.FromArgb(255, 200, 100, 100);
             button4.Enabled = false;
+            button6.Enabled = false;
+            button7.Enabled = false;
         }
     }
 
@@ -233,6 +242,7 @@ public class Form1 : Form
         // 
         // button1
         // 
+        button1.Anchor = AnchorStyles.Top;
         button1.Font = new Font("Segoe UI", 12F);
         button1.Location = new Point(440, 117);
         button1.Name = "button1";
@@ -293,11 +303,11 @@ public class Form1 : Form
         // 
         label3.Anchor = AnchorStyles.Top;
         label3.ForeColor = Color.Red;
-        label3.Location = new Point(82, 56);
+        label3.Location = new Point(51, 56);
         label3.Name = "label3";
-        label3.Size = new Size(130, 16);
+        label3.Size = new Size(185, 16);
         label3.TabIndex = 7;
-        label3.Text = "No File Detected";
+        label3.Text = "No XML-File Detected";
         label3.TextAlign = ContentAlignment.TopCenter;
         // 
         // button3
@@ -361,6 +371,7 @@ public class Form1 : Form
         // button6
         // 
         button6.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+        button6.Enabled = false;
         button6.Location = new Point(78, 173);
         button6.Name = "button6";
         button6.Size = new Size(138, 23);
@@ -371,7 +382,7 @@ public class Form1 : Form
         // 
         // panel1
         // 
-        panel1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+        panel1.Anchor = AnchorStyles.Bottom;
         panel1.BackColor = Color.FromArgb(200, 100, 100);
         panel1.Controls.Add(button4);
         panel1.Controls.Add(textBox1);
@@ -385,7 +396,8 @@ public class Form1 : Form
         // 
         // button7
         // 
-        button7.Location = new Point(32, 579);
+        button7.Enabled = false;
+        button7.Location = new Point(39, 578);
         button7.Name = "button7";
         button7.Size = new Size(194, 31);
         button7.TabIndex = 15;
@@ -405,7 +417,7 @@ public class Form1 : Form
         panel2.Controls.Add(button7);
         panel2.Location = new Point(-3, -2);
         panel2.Name = "panel2";
-        panel2.Size = new Size(268, 624);
+        panel2.Size = new Size(286, 624);
         panel2.TabIndex = 16;
         // 
         // panel7
@@ -419,7 +431,7 @@ public class Form1 : Form
         panel7.Controls.Add(checkBox4);
         panel7.Controls.Add(checkBox3);
         panel7.Controls.Add(label12);
-        panel7.Location = new Point(14, 358);
+        panel7.Location = new Point(21, 357);
         panel7.Name = "panel7";
         panel7.Size = new Size(240, 215);
         panel7.TabIndex = 25;
@@ -513,7 +525,7 @@ public class Form1 : Form
         panel6.Controls.Add(checkBox2);
         panel6.Controls.Add(trackBar2);
         panel6.Controls.Add(label9);
-        panel6.Location = new Point(14, 212);
+        panel6.Location = new Point(21, 211);
         panel6.Name = "panel6";
         panel6.Size = new Size(240, 139);
         panel6.TabIndex = 19;
@@ -569,7 +581,7 @@ public class Form1 : Form
         panel5.Controls.Add(checkBox1);
         panel5.Controls.Add(trackBar1);
         panel5.Controls.Add(label8);
-        panel5.Location = new Point(14, 65);
+        panel5.Location = new Point(21, 64);
         panel5.Name = "panel5";
         panel5.Size = new Size(240, 141);
         panel5.TabIndex = 19;
@@ -621,7 +633,7 @@ public class Form1 : Form
         // label11
         // 
         label11.Font = new Font("Segoe UI", 18F);
-        label11.Location = new Point(14, 18);
+        label11.Location = new Point(24, 10);
         label11.Name = "label11";
         label11.Size = new Size(230, 54);
         label11.TabIndex = 24;
@@ -630,7 +642,7 @@ public class Form1 : Form
         // 
         // panel3
         // 
-        panel3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+        panel3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
         panel3.BackColor = SystemColors.ButtonHighlight;
         panel3.BorderStyle = BorderStyle.FixedSingle;
         panel3.Controls.Add(label10);
@@ -657,6 +669,7 @@ public class Form1 : Form
         // 
         // panel4
         // 
+        panel4.Anchor = AnchorStyles.Top;
         panel4.AutoSizeMode = AutoSizeMode.GrowAndShrink;
         panel4.BorderStyle = BorderStyle.FixedSingle;
         panel4.Controls.Add(label1);
@@ -886,6 +899,17 @@ public class Form1 : Form
         {
             sessionDetails.mayRepeat = false;
         }
+    }
+
+
+    protected override void OnResize(EventArgs e)
+    {
+        base.OnResize(e);
+
+        panel4.Location = new Point(this.Size.Width / 2 - panel4.Size.Width / 2, panel4.Location.Y);
+        button1.Location = new Point(this.Size.Width / 2 - button1.Size.Width / 2, button1.Location.Y);
+        panel1.Location = new Point(this.Size.Width / 2 - panel1.Size.Width / 2, panel1.Location.Y);
+
     }
 }
 
